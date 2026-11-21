@@ -1,0 +1,18 @@
+meta {
+  name: Login
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://api.kitek-pg.ru/api/marketplace/auth/login
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "username": "testuser",
+    "password": "password123"
+  }
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Item
+  type: http
+  seq: 5
+}
+
+post {
+  url: https://api.kitek-pg.ru/api/marketplace/items
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "title": "Ноутбук Dell",
+      "description": "Игровой ноутбук в отличном состоянии",
+      "price": 50000
+  }
+}
